@@ -1,0 +1,40 @@
+<div>
+
+  <div class="header">
+    Settings
+  </div>
+  
+  <div class="logo">
+    <a ui-sref="home">
+      <img src="../images/logo2.png" alt="logo" /> 
+    </a>   
+  </div>
+  
+  <div class="container">    
+    <div class="profile"> 
+      <ul>
+        <li class="bolded">{{ currentUser.name }}</li>
+      </ul>
+
+    </div>  
+
+    <form class="friends">
+  
+
+        <input id="newName" type="text" ng-model="creds.name" placeholder="New user name"><br />
+
+        <input id="newPassword" type="password" ng-model="creds.password" placeholder="New password"><br />
+
+        <button ng-click="changeCreds(creds)">Change</button>
+
+
+    </form>
+
+  </div>
+  
+  <!--
+  <div class="credit">
+    <p>Animal graphic by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a></p>
+  </div>  
+  -->
+</div>

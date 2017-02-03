@@ -11,4 +11,15 @@ angular.module('userProfiles')
 		});
 	}
 
+  $scope.changeCreds = function( creds ) {
+    friendService.changeCreds(creds).then(function(response) {
+      if (response.data.updated) {
+        alert('credentials updated')
+      } else {
+        alert('sorry, there was a problem')
+      }
+
+    })
+  }
+
 });
